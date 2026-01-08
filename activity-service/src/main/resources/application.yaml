@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: activityservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness-users
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server: 8082
